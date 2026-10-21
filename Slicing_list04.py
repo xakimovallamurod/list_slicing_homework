@@ -1,9 +1,9 @@
-def main(list1):
+def main(qadamlar):
     """
-    A list of several elements is given. Return the three elements from the beginning.
-    Args:
-        list1(list): parameter
-    Returns:
-        list: return answer.
+    Allamurodning bir haftalik qadamlari ro'yxati berilgan (dushanbadan yakshanbagacha). Dastlabki uch kunlik qadamlarni qaytaring.
+    Argumentlar:
+        qadamlar(list): qadamlar
+    Qaytaradi:
+        list: natija ro'yxati
     """
     return

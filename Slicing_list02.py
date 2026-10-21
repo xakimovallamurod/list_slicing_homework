@@ -1,9 +1,9 @@
-def main(list1):
+def main(royxat):
     """
-    A list of several elements is given. Reverse this list.
-    Args:
-        list1(list): parameter
-    Returns:
-        list: return answer.
+    Ro'yxat berilgan. Uni teskari tartibda qaytaring.
+    Argumentlar:
+        royxat(list): ro'yxat
+    Qaytaradi:
+        list: natija ro'yxati
     """
     return

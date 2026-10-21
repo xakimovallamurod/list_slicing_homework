@@ -1,11 +1,11 @@
-def main(list1,n,k):
+def main(royxat, n, k):
     """
-    A list of several elements is given. Return the value from n index to k index.
-    Args:
-        list1(list): parameter
-        n(int): parameter
-        k(int): parameter
-    Returns:
-        list: return answer.
+    Ro'yxat, n va k berilgan. n-indeksdan k-indeksgacha (k kirmaydi) bo'lgan elementlarni qaytaring.
+    Argumentlar:
+        royxat(list): ro'yxat
+        n(int): boshlang'ich indeks
+        k(int): oxirgi indeks
+    Qaytaradi:
+        list: natija ro'yxati
     """
     return

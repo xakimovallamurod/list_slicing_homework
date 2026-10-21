@@ -1,10 +1,10 @@
-def main(list1,n):
+def main(royxat, n):
     """
-    A list of several elements is given. Return all items from end n steps.
-    Args:
-        list1(list): parameter
-        n(int): parameter
-    Returns:
-        list: return answer.
+    Ro'yxat va n berilgan. Oxiridan boshlab n qadam bilan barcha elementlarni qaytaring.
+    Argumentlar:
+        royxat(list): ro'yxat
+        n(int): qadam
+    Qaytaradi:
+        list: natija ro'yxati
     """
     return

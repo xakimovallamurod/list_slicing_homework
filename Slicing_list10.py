@@ -1,10 +1,10 @@
-def main(list1,n):
+def main(royxat, n):
     """
-    A list of several elements is given. Return all elements in reverse order except n elements from the beginning.
-    Args:
-        list1(list): parameter
-        n(int): parameter
-    Returns:
-        list: return answer.
+    Ro'yxat va n berilgan. Dastlabki n ta elementdan tashqari hammasini teskari tartibda qaytaring.
+    Argumentlar:
+        royxat(list): ro'yxat
+        n(int): tashlab ketiladigan elementlar soni
+    Qaytaradi:
+        list: natija ro'yxati
     """
     return

@@ -1,9 +1,9 @@
 def main(numbers):
     """
-    A list called numbers is given. Return the items in the even index.
-    Args:
-        numbers(list): parameter
-    Returns:
-        list: return answer.
+    numbers ro'yxati berilgan. Juft indeksdagi (0, 2, 4, ...) elementlarni qaytaring.
+    Argumentlar:
+        numbers(list): sonlar
+    Qaytaradi:
+        list: natija ro'yxati
     """
     return

@@ -1,8 +1,9 @@
-def main(list1):
-    """A list of several elements is given. Return all items from the beginning in three steps.
-    Args:
-        list1(list): parameter
-    Returns:
-        list: return answer.
+def main(royxat):
+    """
+    Ro'yxat berilgan. Boshidan boshlab har uchinchi elementni qaytaring.
+    Argumentlar:
+        royxat(list): ro'yxat
+    Qaytaradi:
+        list: natija ro'yxati
     """
     return

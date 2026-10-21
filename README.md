@@ -1,248 +1,295 @@
-# Xush kelibsiz
-# Listlar bo‘yicha bo‘laklash (Slicing List)
+# Ro'yxatlarni kesish (slicing)
 
-Uy vazifalari va test topshiriqlarini avtomatlashtirilgan tekshirish
-- ushbu repozitoriyani fork qiling
-- topshiriqni bajaring
-- to'g'ri xabar bilan commit qiling
-
-# Muammolar
 ## Slicing_list01
 
-  **Numbers** nomli ro‘yxat berilgan. Juft indeksdagi elementlarni qaytaring.
+`numbers` ro'yxati berilgan. Juft indeksdagi (0, 2, 4, ...) elementlarni qaytaring.
 
 **Misol 1:**
 
 ```Python
-Input: list1=[1, 2, 3, 4, 5]
-Output: [1,3,5]
-
+Kirish: numbers=[8000, 12000, 10000, 9500, 11000, 7000, 13000]
+Chiqarish: [8000, 10000, 11000, 13000]
 ```
 
-**Misol 2:**
-
-```Python
-Input: list1=[0, 1, 2, 3, 4, 5]
-Output: [0, 2, 4]
-
-```
-**Cheklovlar:**
-
-  - 2 <= length(list1) <= 10^5
+---
 
 ## Slicing_list02
 
-  Bir nechta elementlardan iborat ro‘yxat berilgan. Ushbu ro‘yxatni teskari tartibda qaytaring.
+Ro'yxat berilgan. Uni teskari tartibda qaytaring.
 
 **Misol 1:**
 
 ```Python
-Input: list1=[1, 2, 3, 4, 5]
-Output: [5, 4, 3, 2, 1]
-
+Kirish: royxat=["Python", "Matematika", "Ingliz tili", "Fizika"]
+Chiqarish: ["Fizika", "Ingliz tili", "Matematika", "Python"]
 ```
 
-**Misol 2:**
-
-```Python
-Input: list1=[0, 1, 2, 3, 4, 5]
-Output: [5, 4, 3, 2, 1, 0]
-
-```
-**Cheklovlar:**
-
-  - 2 <= length(list1) <= 10^5
+---
 
 ## Slicing_list03
 
-  Bir nechta elementlardan iborat ro‘yxat berilgan. Ushbu ro‘yxatni o‘zining teskari versiyasi bilan birlashtirib qaytaring.
+Ro'yxat berilgan. Uni o'zining teskari tartibdagi nusxasi bilan birlashtirib qaytaring.
 
 **Misol 1:**
 
 ```Python
-Input: list1=['a', 'b', 'c', 'd']
-Output: ['a', 'b', 'c', 'd', 'd', 'c', 'b', 'a']
-
+Kirish: royxat=[26, 178, 74]
+Chiqarish: [26, 178, 74, 74, 178, 26]
 ```
 
-**Misol 2:**
-
-```Python
-Input: list1=[0, 1, 2]
-Output: [0, 1, 2, 2, 1, 0]
-
-```
-**Cheklovlar:**
-
-  - 2 <= length(list1) <= 10^5
+---
 
 ## Slicing_list04
 
-  Bir nechta elementlardan iborat ro‘yxat berilgan. Boshlanishdan uchta elementni qaytaring.
+Allamurodning bir haftalik qadamlari ro'yxati berilgan (dushanbadan yakshanbagacha). Dastlabki uch kunlik qadamlarni qaytaring.
 
 **Misol 1:**
 
 ```Python
-Input: list1=['a', 'b', 'c', 'd']
-Output: ['a', 'b', 'c']
-
+Kirish: qadamlar=[8000, 12000, 10000, 9500, 11000, 7000, 13000]
+Chiqarish: [8000, 12000, 10000]
 ```
 
-**Misol 2:**
-
-```Python
-Input: list1=['a', 1, 'b', 2, 'c', 3, 'd', 4]
-Output: ['a', 1, 'b']
-
-```
-**Cheklovlar:**
-
-  - 4 <= length(list1) <= 10^5
+---
 
 ## Slicing_list05
 
-  Bir nechta elementlardan iborat ro‘yxat berilgan. n-indeksdan k-indeksgacha bo‘lgan elementlarni qaytaring.
+Ro'yxat, n va k berilgan. n-indeksdan k-indeksgacha (k kirmaydi) bo'lgan elementlarni qaytaring.
 
 **Misol 1:**
 
 ```Python
-Input: list1=['a', 'b', 'c', 'd', 'e', 'f'] n = 2 k = 5
-Output: ['c', 'd', 'e']
-
+Kirish: royxat=[8000, 12000, 10000, 9500, 11000, 7000, 13000], n=2, k=5
+Chiqarish: [10000, 9500, 11000]
 ```
 
-**Misol 2:**
-
-```Python
-Input: list1=['a', 1, 'b', 2, 'c', 3, 'd', 4] n = 1 k = 3
-Output: [1, 'b']
-
-```
-**Cheklovlar:**
-
-  - 4 <= length(list1) <= 10^5
-  - 1 <= n <= k <= length(list1)
+---
 
 ## Slicing_list06
 
-  Bir nechta elementlardan iborat ro‘yxat berilgan. Boshlanishdan har uchinchi elementni qaytaring.
+Ro'yxat berilgan. Boshidan boshlab har uchinchi elementni qaytaring.
 
 **Misol 1:**
 
 ```Python
-Input: list1=['a', 'b', 'c', 'd', 'e', 'f']
-Output: ['a', 'd']
-
+Kirish: royxat=[8000, 12000, 10000, 9500, 11000, 7000, 13000]
+Chiqarish: [8000, 9500, 13000]
 ```
 
-**Misol 2:**
-
-```Python
-Input: list1=['a', 1, 'b', 2, 'c', 3, 'd', 4]
-Output: ['a', 2, 'd']
-
-```
-**Cheklovlar:**
-
-  - 4 <= length(list1) <= 10^5
+---
 
 ## Slicing_list07
 
-  Bir nechta elementlardan iborat ro‘yxat berilgan. Boshlanishdan n qadamli barcha elementlarni qaytaring.
+Ro'yxat va n berilgan. Boshidan boshlab n qadam bilan barcha elementlarni qaytaring.
 
 **Misol 1:**
 
 ```Python
-Input: list1=['a', 'b', 'c', 'd', 'e', 'f'] n = -1
-Output: ['f', 'e', 'd', 'c', 'b', 'a']
-
+Kirish: royxat=[8000, 12000, 10000, 9500, 11000, 7000, 13000], n=2
+Chiqarish: [8000, 10000, 11000, 13000]
 ```
 
 **Misol 2:**
 
 ```Python
-Input: list1=['a', 1, 'b', 2, 'c', 3, 'd', 4] n = 2
-Output: ['a', 'b', 'c', 'd']
-
+Kirish: royxat=[8000, 12000, 10000, 9500, 11000, 7000, 13000], n=4
+Chiqarish: [8000, 11000]
 ```
-**Cheklovlar:**
 
-  - 4 <= length(list1) <= 10^5
-  - -1 <= n < length(list1)
-
+---
 
 ## Slicing_list08
 
-  Bir nechta elementlardan iborat ro‘yxat berilgan. Tugashdan n qadamli barcha elementlarni qaytaring.
+Ro'yxat va n berilgan. Oxiridan boshlab n qadam bilan barcha elementlarni qaytaring.
 
 **Misol 1:**
 
 ```Python
-Input: list1=['a', 'b', 'c', 'd', 'e', 'f'] n = -1
-Output: ['a', 'b', 'c', 'd', 'e', 'f']
-
+Kirish: royxat=[8000, 12000, 10000, 9500, 11000, 7000, 13000], n=2
+Chiqarish: [13000, 11000, 10000, 8000]
 ```
 
 **Misol 2:**
 
 ```Python
-Input: list1=['a', 1, 'b', 2, 'c', 3, 'd', 4] n = 2
-Output: [4, 3, 2, 1]
-
+Kirish: royxat=[8000, 12000, 10000, 9500, 11000, 7000, 13000], n=3
+Chiqarish: [13000, 9500, 8000]
 ```
-**Cheklovlar:**
 
-  - 4 <= length(list1) <= 10^5
-  - -1 <= n <= length(list1)
+---
 
 ## Slicing_list09
 
-  Bir nechta elementlardan iborat ro‘yxat berilgan. Boshlanishdan n elementdan tashqari hammasini qaytaring.
+Ro'yxat va n berilgan. Dastlabki n ta elementdan tashqari hammasini qaytaring.
 
 **Misol 1:**
 
 ```Python
-Input: list1=['a', 'b', 'c', 'd', 'e', 'f'] n = 3
-Output: ['d', 'e', 'f']
-
+Kirish: royxat=["Python", "Matematika", "Ingliz tili", "Fizika"], n=2
+Chiqarish: ["Ingliz tili", "Fizika"]
 ```
 
-**Misol 2:**
-
-```Python
-Input: list1=['a', 1, 'b', 2, 'c', 3, 'd', 4] n = 2
-Output: ['b', 2, 'c', 3, 'd', 4]
-
-```
-**Cheklovlar:**
-
-  - 4 <= length(list1) <= 10^5
-  - -1 <= n <= length(list1)
+---
 
 ## Slicing_list10
 
-  Bir nechta elementlardan iborat ro‘yxat berilgan. Boshlanishdan n elementdan tashqari hammasini teskari tartibda qaytaring.
+Ro'yxat va n berilgan. Dastlabki n ta elementdan tashqari hammasini teskari tartibda qaytaring.
 
 **Misol 1:**
 
 ```Python
-Input: list1=['a', 'b', 'c', 'd', 'e', 'f'] n = 3
-Output: ['f', 'e', 'd']
+Kirish: royxat=["Python", "Matematika", "Ingliz tili", "Fizika"], n=1
+Chiqarish: ["Fizika", "Ingliz tili", "Matematika"]
+```
 
+---
+
+## Slicing_list11
+
+Allamurodning bir haftalik qadamlari ro'yxati berilgan (dushanbadan yakshanbagacha). Oxirgi uch kunlik qadamlarni qaytaring.
+
+**Misol 1:**
+
+```Python
+Kirish: qadamlar=[8000, 12000, 10000, 9500, 11000, 7000, 13000]
+Chiqarish: [11000, 7000, 13000]
+```
+
+---
+
+## Slicing_list12
+
+Ro'yxat berilgan. Birinchi va oxirgi elementlarsiz qolgan qismini qaytaring.
+
+**Misol 1:**
+
+```Python
+Kirish: royxat=["Python", "Matematika", "Ingliz tili", "Fizika"]
+Chiqarish: ["Matematika", "Ingliz tili"]
+```
+
+---
+
+## Slicing_list13
+
+Allamurodning bir haftalik qadamlari ro'yxati berilgan (dushanbadan yakshanbagacha). Ish kunlari (dastlabki 5 kun) va dam olish kunlari (oxirgi 2 kun) qadamlari yig'indisini `[ish_kunlari, dam_olish]` ro'yxati ko'rinishida qaytaring. Kesish va `sum()` dan foydalaning.
+
+**Misol 1:**
+
+```Python
+Kirish: qadamlar=[8000, 12000, 10000, 9500, 11000, 7000, 13000]
+Chiqarish: [50500, 20000]
+```
+
+---
+
+## Slicing_list14
+
+Allamurodning 6 oylik daromadi ro'yxati berilgan. Birinchi va ikkinchi yarim (3 oydan) daromadlari yig'indilari farqini (ikkinchi − birinchi) qaytaring.
+
+**Misol 1:**
+
+```Python
+Kirish: daromad=[6500000, 6500000, 6800000, 7000000, 7200000, 7200000]
+Chiqarish: 1600000
+```
+
+---
+
+## Slicing_list15
+
+Juft uzunlikdagi ro'yxat berilgan. Uning ikki yarmini o'rnini almashtirib qaytaring. `len()` va kesishdan foydalaning.
+
+**Misol 1:**
+
+```Python
+Kirish: royxat=["Python", "Matematika", "Ingliz tili", "Fizika"]
+Chiqarish: ["Ingliz tili", "Fizika", "Python", "Matematika"]
+```
+
+---
+
+## Slicing_list16
+
+Ro'yxat berilgan. Agar u teskari tartibda ham bir xil bo'lsa `True`, aks holda `False` qaytaring.
+
+**Misol 1:**
+
+```Python
+Kirish: royxat=[2, 0, 0, 2]
+Chiqarish: True
 ```
 
 **Misol 2:**
 
 ```Python
-Input: list1=['a', 1, 'b', 2, 'c', 3, 'd', 4] n = 2
-Output: [4, 'd', 3, 'c', 2, 'b']
-
+Kirish: royxat=[2, 0, 2, 6]
+Chiqarish: False
 ```
-**Cheklovlar:**
 
-  - 4 <= length(list1) <= 10^5
-  - -1 <= n <= length(list1)
+---
 
-# Ogohlantirish
-- boshqa yechimlarni yoki har qanday yechimni ko‘chirmang
-- sharhlarni o‘chirmang
+## Slicing_list17
+
+Allamurodning fanlar ro'yxati va indeks n berilgan. Kesish yordamida n-indeksdagi fanni olib tashlab, yangi ro'yxatni qaytaring.
+
+**Misol 1:**
+
+```Python
+Kirish: fanlar=["Python", "Matematika", "Ingliz tili", "Fizika"], n=1
+Chiqarish: ["Python", "Ingliz tili", "Fizika"]
+```
+
+---
+
+## Slicing_list18
+
+Allamurodning fanlar ro'yxati, indeks i va yangi fan berilgan. Kesish yordamida yangi fanni i-o'ringa qo'shib, ro'yxatni qaytaring.
+
+**Misol 1:**
+
+```Python
+Kirish: fanlar=["Python", "Matematika", "Ingliz tili", "Fizika"], i=2, fan="Algoritmlar"
+Chiqarish: ["Python", "Matematika", "Algoritmlar", "Ingliz tili", "Fizika"]
+```
+
+---
+
+## Slicing_list19
+
+Sonlar ro'yxati berilgan. Juft indekslardagi elementlar yig'indisidan toq indekslardagi elementlar yig'indisini ayirib qaytaring.
+
+**Misol 1:**
+
+```Python
+Kirish: royxat=[8000, 12000, 10000, 9500, 11000, 7000, 13000]
+Chiqarish: 13500
+```
+
+**Misol 2:**
+
+```Python
+Kirish: royxat=[1, 2, 3, 4]
+Chiqarish: -2
+```
+
+---
+
+## Slicing_list20
+
+Allamurodning bir haftalik qadamlari ro'yxati berilgan (dushanbadan yakshanbagacha). Son n berilgan. Oxirgi n kunlik qadamlar yig'indisi dastlabki n kunlik qadamlar yig'indisidan qanchaga ko'p (yoki kam) ekanini qaytaring.
+
+**Misol 1:**
+
+```Python
+Kirish: qadamlar=[8000, 12000, 10000, 9500, 11000, 7000, 13000], n=3
+Chiqarish: 1000
+```
+
+**Misol 2:**
+
+```Python
+Kirish: qadamlar=[8000, 12000, 10000, 9500, 11000, 7000, 13000], n=2
+Chiqarish: 0
+```
+
